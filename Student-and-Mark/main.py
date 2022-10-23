@@ -14,6 +14,7 @@ if __name__ == '__main__':
     print(i)
     io = PickleIOStudent(str(BASE_DIR.joinpath('ivanov.pickle')))
     io.save(Ivanov)
+    
     print("Ivanov is saved")
     d2 = io.restore()
     print(d2)
